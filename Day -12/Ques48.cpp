@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+
+
+int perfect(int n){
+    int sum = 0;
+    int ans;
+   for( int i= 1 ; i < n;i++){
+    if(n%i == 0){
+        
+        sum = sum + i;
+    }
+    
+   }
+   return sum;
+   
+   
+
+
+
+}
+
+int main(){
+    int n;
+    cout<<"entrr the number";
+    cin>>n;
+
+   int ans = perfect(n);
+    int original = n;
+
+    if(ans == original ){
+        cout<<"perfect no";
+    }
+    else{
+        cout<<"not a perfect no";
+    }
+
+}
